@@ -1,85 +1,16 @@
 import { useState } from "react";
-
+import tags from '../WikiTags/Wiki-Sections'
 import './Banner.css'
 
+
 interface Tag {
-  name: string;
-  children: Tag[] | null;
+  name: string,
+  children: Tag[] | null
 }
 
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [hoveredTag, setHoveredTag] = useState<string | null>(null);
-
-  const tags: Tag[] = [
-    {
-      "name": "Characters",
-      "children": null
-    },
-    {
-      "name": "Bosses",
-      "children": null
-    },
-    {
-      "name": "Classes",
-      "children": null
-    },
-    {
-      "name": "Armaments",
-      "children": [
-        {
-          "name": "Shields",
-          "children": null
-        },
-        {
-          "name": "Weapons",
-          "children": null
-        },
-        {
-          "name": "Ammo",
-          "children": null
-        }
-      ]
-    },
-    {
-      "name": "Sorceries",
-      "children": [
-        {
-          "name": "sorcery types",
-          "children": null
-        }
-      ]
-    },
-    {
-      "name": "Incantations",
-      "children": [
-        {
-          "name": "Incant types",
-          "children": null
-        }
-      ]
-    },
-    {
-      "name": "Locations",
-      "children": null
-    },
-    {
-      "name": "Armors",
-      "children": null
-    },
-    {
-      "name": "Items",
-      "children": null
-    },
-    {
-      "name": "Spirit Ashes",
-      "children": null
-    },
-    {
-      "name": "Ashes of War",
-      "children": null
-    }
-  ];
 
   const renderTag = (tag: Tag) => {
     const hasChildren = tag.children && tag.children.length > 0;

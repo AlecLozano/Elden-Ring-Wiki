@@ -2,14 +2,27 @@ import React, { useState } from "react";
 
 import Banner from "../components/Banner";
 import './Home.css'
+import tags from '../WikiTags/Wiki-Sections'
 
 const Home = () =>{
-    const [searchQuery, setSearchQueary] = useState("");
-
 
     return (
         <div className="home-layout">
-            <Banner SearchQuery={searchQuery}/>
+            <div>
+                <Banner />
+            </div>
+            <div className="home-element">
+                <div className="wiki-topics">
+                    {tags.map((tag)=>(
+                    <div className="wiki-topic">
+                        <text>
+                            {tag.name}
+                        </text>
+                        <img src={tag?.Icon} alt="No Image"/>
+                    </div>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }
