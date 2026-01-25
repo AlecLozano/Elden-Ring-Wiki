@@ -6,6 +6,12 @@ import tags from '../WikiTags/Wiki-Sections'
 
 const Home = () =>{
 
+    interface Tag {
+        name: String,
+        children: Tag[] | null,
+        Icon: String | null,
+    }
+
     return (
         <div className="home-layout">
             <div>
@@ -18,7 +24,7 @@ const Home = () =>{
                         <text>
                             {tag.name}
                         </text>
-                        <img src={tag?.Icon} alt="No Image"/>
+                        <img src={tag?.Icon}/>
                     </div>
                     ))}
                 </div>

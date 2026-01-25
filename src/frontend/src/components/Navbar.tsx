@@ -5,7 +5,7 @@ import './Banner.css'
 
 interface Tag {
   name: string,
-  children: Tag[] | null
+  children: Tag[] | undefined
 }
 
 const Navbar = () => {

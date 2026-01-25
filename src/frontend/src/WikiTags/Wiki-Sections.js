@@ -3,17 +3,17 @@ import { User } from "lucide-react";
 const tags = [
     {
         "name": "Characters",
-        "children": null,
+        "children": undefined,
         "Icon":  `${process.env.PUBLIC_URL}/Assets/Home Icons/NPC.png`
     },
     {
         "name": "Bosses",
-        "children": null,
+        "children": undefined,
         "Icon":  `${process.env.PUBLIC_URL}/Assets/Home Icons/BossIcon.png`
     },
     {
         "name": "Classes",
-        "children": null,
+        "children": undefined,
         "Icon":  `${process.env.PUBLIC_URL}/Assets/Home Icons/ClassesIcon.png`
     },
     {
@@ -21,15 +21,15 @@ const tags = [
         "children": [
             {
                 "name": "Shields",
-                "children": null
+                "children": undefined
             },
             {
                 "name": "Weapons",
-                "children": null
+                "children": undefined
             },
             {
                 "name": "Ammo",
-                "children": null
+                "children": undefined
             }
         ],
         "Icon":  `${process.env.PUBLIC_URL}/Assets/Home Icons/ArmamentsIcon.png`
@@ -40,45 +40,45 @@ const tags = [
         "children": [
             {
                 "name": "sorcery types",
-                "children": null
+                "children": undefined
             }
         ],
-        "Icon": null
+        "Icon": undefined
     },
     {
         "name": "Incantations",
         "children": [
             {
                 "name": "Incant types",
-                "children": null
+                "children": undefined
             }
         ],
-        "Icon": null
+        "Icon": undefined
     },
     {
         "name": "Locations",
-        "children": null,
-        "Icon": null
+        "children": undefined,
+        "Icon": undefined
     },
     {
         "name": "Armors",
-        "children": null,
-        "Icon": null
+        "children": undefined,
+        "Icon": undefined
     },
     {
         "name": "Items",
-        "children": null,
-        "Icon": null
+        "children": undefined,
+        "Icon": undefined
     },
     {
         "name": "Spirit Ashes",
-        "children": null,
-        "Icon": null
+        "children": undefined,
+        "Icon": undefined
     },
     {
         "name": "Ashes of War",
-        "children": null,
-        "Icon": null
+        "children": undefined,
+        "Icon": undefined
     }
 ];
 
