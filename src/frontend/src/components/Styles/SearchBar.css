@@ -1,19 +1,25 @@
 .search-input {
     width: 40vw;
     max-width: 40vw;
-
+    background-color: #000000;
+    border-color: #3e3c2f;
+    color: #ccc;
     height: 25px;
     padding: 12px 20px;
     font-family: 'Mantinia', serif;
     font-size: 18px;
-    border: 2px solid #ccc;
+    border: 2px solid #928c7d;
     border-radius: 25px;
     outline: none;
     transition: border-color 0.3s;
 }
 
 .search-input:focus {
-    border-color: #fbff00;
+    border-color: #ccc;
+}
+
+.search-input::placeholder{
+    color: #ccc
 }
 
 .search-div {
@@ -68,7 +74,7 @@
 }
 
 .result-item-children{
-    max-height: 20vh;
+    max-height: 40vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
