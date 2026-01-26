@@ -1,5 +1,3 @@
-import { User } from "lucide-react";
-
 const tags = [
     {
         "name": "Characters",

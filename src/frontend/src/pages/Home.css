@@ -1,35 +1,14 @@
 .home-layout {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     padding-top: 20vh;
-}
-
-.wiki-topics {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
-    max-width: 50%;
+    width: 80%;
     margin: auto;
 }
 
-.wiki-topic {
+.SearchBar {
     display: flex;
-    flex-direction: column;
-    border-width: 2px;
-    margin-top: 20px;
-    padding: 20px;
-
+    justify-content: center;
+    align-items: center;
     margin: auto;
-
-    
-    height: 20vh;
-    width: 10vw;
-
-    border: solid;
-    border-color: black;
-    border-width: 2px;
-} 
-
+}
